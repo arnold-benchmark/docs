@@ -20,6 +20,19 @@ There are two setup approaches: **docker-based** and **conda-based**. We recomme
    docker build -f Dockerfile -t "arnold" .
    ```
 3. Build vagrant in the workspace. This might take a long time if you are using the image from the dockerHub instead of building it locally. You can use a system monitor to stay checking the process.
+
+   It is also possible that `Vagrantfile` contains wrong paths for your `nvidia_icd.json` and `nvidia_layers.json`. Make sure they are not empty. For example, you should check the two paths: `/etc/vulkan/icd.d/nvidia_icd.json` and `/usr/share/vulkan/icd.d/nvidia_icd.json`, one of which would always exist.
+
+   ```ruby
+   # if jsons exist in /etc (default)
+   '-v', '/etc/vulkan/icd.d/nvidia_icd.json:/etc/vulkan/icd.d/nvidia_icd.json',
+   '-v', '/etc/vulkan/implicit_layer.d/nvidia_layers.json:/etc/vulkan/implicit_layer.d/nvidia_layers.json',
+
+   # if jsons exist in /usr, modify the two lines in Vagrantfile
+   '-v', '/usr/share/vulkan/icd.d/nvidia_icd.json:/etc/vulkan/icd.d/nvidia_icd.json',
+   '-v', '/usr/share/vulkan/implicit_layer.d/nvidia_layers.json:/etc/vulkan/implicit_layer.d/nvidia_layers.json',
+   ```
+   Check the above paths according to your system. After that, build vagrant.
    ```bash
    vagrant up
    ```
