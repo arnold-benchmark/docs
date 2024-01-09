@@ -44,7 +44,7 @@ As a backup solution, we also introduce a conda-based setup.
 
 1. Manually download [NVIDIA Omniverse](https://www.nvidia.com/en-us/omniverse/download/) and install.
 2. Open the `NVIDIA Omniverse` platform and install `Isaac Sim 2022.1.1` (other versions are not guaranteed to work) in `Library`.
-3. Clone the [code repo].
+3. Clone the [code repo](https://github.com/arnold-benchmark/arnold).
    ```bash
    git clone git@github.com:arnold-benchmark/arnold.git
    cd arnold
@@ -66,8 +66,8 @@ As a backup solution, we also introduce a conda-based setup.
    ```
 7. Link the libraries and toolkits of `Isaac Sim`:
    ```bash
-   source ${Isaac_Sim_Root}/setup_conda_env.sh
-   # e.g., source ~/.local/share/ov/pkg/isaac_sim-2022.1.1/setup_conda_env.sh
+   bash ${Isaac_Sim_Root}/setup_conda_env.sh
+   # e.g., bash ~/.local/share/ov/pkg/isaac_sim-2022.1.1/setup_conda_env.sh
    ```
 8. You are ready to run scripts. In the activated conda environment, you can directly use `python`, in contrast to `/isaac-sim/python.sh` in docker.
 
@@ -93,8 +93,8 @@ After setup, you can run a toy example to check if <tt>Isaac Sim</tt> is working
   ```bash
   conda activate arnold
 
-  source ${Isaac_Sim_Root}/setup_conda_env.sh
-  # e.g., source ~/.local/share/ov/pkg/isaac_sim-2022.1.1/setup_conda_env.sh
+  bash ${Isaac_Sim_Root}/setup_conda_env.sh
+  # e.g., bash ~/.local/share/ov/pkg/isaac_sim-2022.1.1/setup_conda_env.sh
 
   python ${Isaac_Sim_Root}/standalone_examples/api/omni.isaac.franka/pick_place.py
   # e.g., python ~/.local/share/ov/pkg/isaac_sim-2022.1.1/standalone_examples/api/omni.isaac.franka/pick_place.py
