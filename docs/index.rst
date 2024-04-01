@@ -17,3 +17,4 @@ Welcome to ARNOLD's documentation!
    tutorial/configs/index
    tutorial/train/index
    tutorial/eval/index
+   tutorial/challenge_setup/index
