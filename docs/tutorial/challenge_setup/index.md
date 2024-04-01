@@ -1,4 +1,4 @@
-# challenge specific setup guide
+# Challenge Specific Setup Guide
 
 ### Prerequisite
 
@@ -29,7 +29,7 @@ cd arnold/workspace
 ```
 
 ### build docker image
-Make sure nvdia docker is properly installed
+Make sure nvidia docker is properly installed
 
 ```bash
 docker build -f Dockerfile -t "arnold" .
@@ -61,7 +61,7 @@ unzip sample.zip
 unzip materials.zip
 ```
 
-###  model evaluation 
+###  Model Evaluation 
 
 ```bash
 eval_challenge_dev.sh checkpoint_dir # for dev phase
