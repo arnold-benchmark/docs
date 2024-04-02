@@ -5,7 +5,10 @@
 0. Prerequisite. We recommend the OS version <tt>Ubuntu 18.04/20.04</tt> and NVIDIA driver version <tt>525.60.11</tt>. Docker-based setup is not guaranteed to work on other OS or driver versions.
 We also tested the following driver version that is compatible with isaac sim:
 
+```
+470.141.03
 535.113.01
+```
 
 1. Generate NVIDIA NGC API Key
    - Log in [NVIDIA NGC](https://catalog.ngc.nvidia.com/). If you do not have an account, register one and log in.
