@@ -2,7 +2,7 @@
 
 ### Prerequisite
 
-0. Prerequisite. Make sure you have an RTX compatible GPU. We recommend the OS version <tt>Ubuntu 18.04/20.04</tt> and NVIDIA driver version <tt>525.60.11</tt>. Docker-based setup is not guaranteed to work on other OS or driver versions.
+0. Prerequisite. Make sure you are using an RTX compatible GPU. We recommend the OS version <tt>Ubuntu 18.04/20.04</tt> and NVIDIA driver version <tt>525.60.11</tt>. Docker-based setup is not guaranteed to work on other OS or driver versions.
 We also tested the following driver version that is compatible with isaac sim:
 
 ```
