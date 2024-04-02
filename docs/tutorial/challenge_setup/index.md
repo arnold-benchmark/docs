@@ -45,8 +45,8 @@ vagrant ssh
 ###     Download challenge data and assets
 For all data and assets unzip under /vagrant
 * challenge_data_train.zip is for training
-* data_for_challenge_final.zip for testing phase
-* data_for_challenge_val.zip for dev phase
+* data_for_challenge_final.zip for the `test` phase
+* data_for_challenge_val.zip for the `dev` phase
 * materials.zip for scene and object materials
 * sample.zip for assets used in ARNOLD
 ```bash
@@ -80,4 +80,6 @@ After evaluation is done, the scripts will generate an output folder. Zip the ou
 ```
 zip -r submission_dev.zip -r /root/arnold/output_dev/
 zip -r submission_test.zip -r /root/arnold/output/
+evalai challenge 2266 phase 4500 submit --file submission_dev.zip --large
+evalai challenge 2266 phase 4501 submit --file submission_test.zip --large
 ```
