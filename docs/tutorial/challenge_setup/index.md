@@ -63,13 +63,14 @@ unzip materials.zip
 
 ###  Model Evaluation 
 
+Please read these two evaluation scripts carefully to understand what happened:
+
 ```bash
 eval_challenge_dev.sh checkpoint_dir # for dev phase
 eval_challenge.sh checkpoint_dir # for testing phase
 ```
 
-The first time starting the Isaac Sim takes long time, approximately 6 minutes ( vary based on the device configuration)
-Please read these two evaluation scripts carefully to understand what happened and also refer to default.yaml
+The first time starting the Isaac Sim takes long time, approximately 6 minutes (vary based on the device configuration).
 
 After evaluation is done, the scripts will generate an output folder. Zip the output folder (`/root/arnold/output` or `/root/arnold/output_dev` depending on the phase) and submit it to EvalAI using command line
 
