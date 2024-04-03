@@ -76,7 +76,7 @@ unzip sample.zip
 Please read these two evaluation scripts carefully to understand what happened:
 
 ```bash
-cd ~/arnold/
+cd /root/arnold/
 bash eval_challenge_dev.sh ${checkpoint_file} # for dev phase
 bash eval_challenge.sh ${checkpoint_file} # for test phase
 ```
