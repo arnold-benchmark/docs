@@ -83,7 +83,7 @@ bash eval_challenge.sh ${checkpoint_file} # for test phase
 
 To reproduce the results using the baseline checkpoint: 
 ```bash
-gdown https://drive.google.com/file/d/1YuADlTFJZQc3AefULmzhZ9PrCWVjsEU2/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1YuADlTFJZQc3AefULmzhZ9PrCWVjsEU2
 bash eval_challenge_dev.sh peract_multi_clip_best.pth
 bash eval_challenge.sh peract_multi_clip_best.pth
 ```
