@@ -54,15 +54,15 @@ pip install gdown
 
 cd /vagrant
 # data_for_challenge_train.zip
-gdown https://drive.google.com/file/d/1gxSW3fFhGghJUpf_jiAy3iR_zrPy_MlJ/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1gxSW3fFhGghJUpf_jiAy3iR_zrPy_MlJ
 # data_for_challenge_val.zip
-gdown https://drive.google.com/file/d/1diLNQQcOGKEVkgOstkRbagbn_cVCKVIE/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1diLNQQcOGKEVkgOstkRbagbn_cVCKVIE
 # data_for_challenge_final.zip
-gdown https://drive.google.com/file/d/1XKRxsByOwI_pYh09LUQ5wGLgzeGmL-KH/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1XKRxsByOwI_pYh09LUQ5wGLgzeGmL-KH
 # materials.zip
-gdown https://drive.google.com/file/d/1CAT6pZfX0HqHKXU5qBdLeRZl_iY_XfOt/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1CAT6pZfX0HqHKXU5qBdLeRZl_iY_XfOt
 # sample.zip
-gdown https://drive.google.com/file/d/1jscZWcibfVXItbY1xZxRogA6Q8j3U60C/view?usp=drive_link
+gdown https://drive.google.com/uc?id=1jscZWcibfVXItbY1xZxRogA6Q8j3U60C
 
 unzip data_for_challenge_train.zip
 unzip data_for_challenge_val.zip
