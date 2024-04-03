@@ -53,10 +53,15 @@ You can download [data and assets](https://drive.google.com/drive/folders/1yaEIt
 pip install gdown
 
 cd /vagrant
+# data_for_challenge_train.zip
 gdown https://drive.google.com/file/d/1gxSW3fFhGghJUpf_jiAy3iR_zrPy_MlJ/view?usp=drive_link
+# data_for_challenge_val.zip
 gdown https://drive.google.com/file/d/1diLNQQcOGKEVkgOstkRbagbn_cVCKVIE/view?usp=drive_link
+# data_for_challenge_final.zip
 gdown https://drive.google.com/file/d/1XKRxsByOwI_pYh09LUQ5wGLgzeGmL-KH/view?usp=drive_link
+# materials.zip
 gdown https://drive.google.com/file/d/1CAT6pZfX0HqHKXU5qBdLeRZl_iY_XfOt/view?usp=drive_link
+# sample.zip
 gdown https://drive.google.com/file/d/1jscZWcibfVXItbY1xZxRogA6Q8j3U60C/view?usp=drive_link
 
 unzip data_for_challenge_train.zip
@@ -71,8 +76,16 @@ unzip sample.zip
 Please read these two evaluation scripts carefully to understand what happened:
 
 ```bash
+cd ~/arnold/
 bash eval_challenge_dev.sh ${checkpoint_file} # for dev phase
 bash eval_challenge.sh ${checkpoint_file} # for test phase
+```
+
+To reproduce the results using the baseline checkpoint: 
+```bash
+gdown https://drive.google.com/file/d/1YuADlTFJZQc3AefULmzhZ9PrCWVjsEU2/view?usp=drive_link
+bash eval_challenge_dev.sh peract_multi_clip_best.pth
+bash eval_challenge.sh peract_multi_clip_best.pth
 ```
 
 The first time starting the Isaac Sim takes long time, approximately 6 minutes (varying to the device configuration).
