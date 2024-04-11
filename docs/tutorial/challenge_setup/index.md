@@ -96,6 +96,6 @@ After evaluation is done, the scripts will generate an output folder. Zip the ou
 zip -r submission_dev.zip -r /root/arnold/output_dev/
 zip -r submission_test.zip -r /root/arnold/output/
 
-evalai challenge 2266 phase 4500 submit --file submission_dev.zip --large
-evalai challenge 2266 phase 4501 submit --file submission_test.zip --large
+evalai challenge 2266 phase 4500 submit --file submission_dev.zip --large --public
+evalai challenge 2266 phase 4501 submit --file submission_test.zip --large --public
 ```
